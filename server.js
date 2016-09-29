@@ -5,21 +5,21 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne ={
+var article-one ={
   title: 'Article one | Harsha',
   heading: 'Article one',
   date: 'Sep 29,2016',
   content: 'This is article one blah'
 };
 
-var articleTwo ={
+var article-two ={
   title: 'Article two | Harsha',
   heading: 'Article two',
   date: 'dec 29,2016',
   content: 'This is article two'
 };
 
-var articleThree ={
+var article-three ={
   title: 'Article three | Harsha',
   heading: 'Article three',
   date: 'mar 29,2016',
@@ -62,8 +62,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one',function(req,res){
-  res.send(createTemplate(articleOne));
+app.get('/:articleName',function(req,res){
+  res.send(createTemplate(articleName));
 });
 
 app.get('/article-two',function(req,res){
