@@ -9,7 +9,7 @@ var articleOne ={
   title: 'Article one | Harsha',
   heading: 'Article one',
   date: 'Sep 29,2016',
-  content: 'This is article one'
+  content: 'This is article one blah'
 };
 
 var articleTwo ={
