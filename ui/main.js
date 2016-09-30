@@ -1,11 +1,20 @@
 var button = document.getElementById("counter");
 
-var counter=0;
+
 button.onclick = function(){
-console.log('function enter');
+
+    var request = XMLHttpRequest();
     
-    counter=counter+1;
-    var pan = document.getElementById("count");
-    pan.innerHTML = counter.toString();
+    request.onreadystatechange = function(){
+        if(request.readystate === XMLHttpRequest.DONE){
+            if (request.status ===200){
+            var counter = request.responseText;
+            }
+        }
+    }
+    var span = document.getElementById("count");
+    span.innerHTML = counter.toString();
 };
 
+request.open('GET','http://harshaonhub28.imad.hasura.io/counter',true);
+request.send(null);
