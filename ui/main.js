@@ -38,7 +38,7 @@ submit.onclick = function(){
         }
     }
   
-request.open('GET','http://harshaonhub28.imad.hasura-app.io/submit-name/:'+sname,true);
+request.open('GET','http://harshaonhub28.imad.hasura-app.io/submit-name?name='+sname,true);
 request.send(null);  
     
     //capture the names and display them
