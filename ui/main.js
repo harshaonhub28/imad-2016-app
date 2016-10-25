@@ -1,19 +1,3 @@
-var a = function(err,x){
-    if(err)
-        console.log(err);
-    else
-        console.log(x);
-}
-
-var b = function(y,cb){
-    var z = y*y;
-    if(//some computaion)
-        cb(null,z);
-    else
-        cb('error');
-}
-
-b(1,a);
 
 var button = document.getElementById("counter");
 
