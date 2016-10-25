@@ -20,7 +20,7 @@ body {
     height: 200px;
 }
 
-.img {
+#img {
     float:left;
     display :inline block;
 }
