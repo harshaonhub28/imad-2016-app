@@ -25,6 +25,15 @@ body {
     display :inline block;
 }
 
+#img.resize {
+    width: 200px;
+    height: auto;
+}
+
+.body {
+    clear:right;
+}
+
 #nav-bar {
     
 }
