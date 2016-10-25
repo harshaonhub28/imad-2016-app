@@ -73,8 +73,8 @@ app.get('/counter',function(req,res){
 });
 
 var names=[];
-app.get('/submit-name/:sname',function(req,res){
-     var name = req.params.sname;
+app.get('/submit-name/:what',function(req,res){
+     var name = req.params.what;
      names.push(name);
      res.send(JSON.stringify(names));
 });
