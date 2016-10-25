@@ -26,6 +26,7 @@ submit.onclick = function(){
     
     var nameInput = document.getElementById('name');
     var sname = nameInput.value;
+    console.log(sname);
 
     //send name to server and get results back
      var request =new XMLHttpRequest();
