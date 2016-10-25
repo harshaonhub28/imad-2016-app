@@ -1,3 +1,20 @@
+var a = function(err,x){
+    if(err)
+        console.log(err);
+    else
+        console.log(x);
+}
+
+var b = function(y,cb){
+    var z = y*y;
+    if(//some computaion)
+        cb(null,z);
+    else
+        cb('error');
+}
+
+b(1,a);
+
 var button = document.getElementById("counter");
 
 
@@ -35,6 +52,16 @@ submit.onclick = function(){
             if (request.status ===200)  {
                 names = request.responseText;
                 names = JSON.parse(names);
+                
+            //capture the names and display them
+            var list='';
+            for(var i=0; i<names.length;i++){
+                list += '<li>'+names[i]+'</li>';
+                console.log(names[i]);
+            }
+            console.log(list);
+            var ul = document.getElementById('namelist');
+            ul.innerHTML = list;
             }
         }
     };
@@ -42,13 +69,5 @@ submit.onclick = function(){
 request.open('GET','http://harshaonhub28.imad.hasura-app.io/submitName?name='+sname,true);
 request.send(null);  
     
-    //capture the names and display them
-    var list='';
-    for(var i=0; i<names.length;i++){
-        list += '<li>'+names[i]+'</li>';
-        console.log(names[i]);
-    }
-    console.log(list);
-    var ul = document.getElementById('namelist');
-    ul.innerHTML = list;
+    
 };
