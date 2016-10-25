@@ -13,7 +13,7 @@ button.onclick = function(){
                 document.getElementById('count').innerHTML = counter.toString();
             }
         }
-    }
+    };
   
 request.open('GET','http://harshaonhub28.imad.hasura-app.io/counter',true);
 request.send(null);  
@@ -36,7 +36,7 @@ submit.onclick = function(){
                 names = JSON.parse(names);
             }
         }
-    }
+    };
   
 request.open('GET','http://harshaonhub28.imad.hasura-app.io/submitName/:'+sname,true);
 request.send(null);  
@@ -48,4 +48,4 @@ request.send(null);
     }
     var ul = document.getElementById('namelist');
     ul.innerHTML = list;
-}
+};
