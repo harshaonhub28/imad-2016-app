@@ -24,7 +24,6 @@ img {
     float: left;
     height: 250px;
     width : 250px;
-    position:absolute;
     display: inline block;
     border : 1px solid black;
     border-radius: 5px;
