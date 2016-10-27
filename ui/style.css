@@ -22,12 +22,13 @@ body {
 
 #inner {
     position: absolute;
-    margin: auto;
+    margin-top:25px;
+    margin-left:50px;
     
 }
 
 img {
-    width: 60%;
+    width: 80%;
     height: auto;   
 }
 
@@ -42,5 +43,7 @@ img {
     width : 250px;
     position:absolute;
     display: inline block;
+    border : 1px solid black;
+    border-radius: 5px;
 }
 
