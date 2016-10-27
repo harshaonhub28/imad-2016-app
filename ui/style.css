@@ -31,12 +31,14 @@ img {
     
 }
 
-#menu {
+.menu {
     height:400px;
-    background-color:blue;
+    width : 250px;
+    background-color:babyblue;
     position: relative;
     clear: left;
-    
+    border : 1px solid black;
+    border-radius: 5px;
 }
 
 
