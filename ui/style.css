@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     background-color: lightgrey;
-    margin-top: 75px;
+    margin-top: 20px;
 }
 
 .center {
@@ -20,14 +20,15 @@ body {
     height: 200px;
 }
 
-#img {
-    float:left;
-    display :inline block;
+#inner {
+    position: absolute;
+    margin: auto;
 }
 
-#img.resize {
-    width: 200px;
+#inner.resize {
+    width: 150px;
     height: auto;
+    
 }
 
 .body {
@@ -35,9 +36,11 @@ body {
 }
 
 .left {
-    background-color: blue;
+    background-color: skyblue;
     float: left;
-    height: 300px;
-    width : 300px;
+    height: 250px;
+    width : 250px;
+    position:absolute;
+    display: inline block;
 }
 
