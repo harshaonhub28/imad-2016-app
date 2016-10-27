@@ -23,12 +23,12 @@ body {
 #inner {
     position: absolute;
     margin: auto;
+    
 }
 
-#inner.resize {
+img {
     width: 60%;
-    height: auto;
-    
+    height: auto;   
 }
 
 .body {
